@@ -1,1 +1,9 @@
-main
+<<<<<<< HEAD
+
+*.a
+*.d
+*.o
+bin/chessviz
+=======
+chessCPP
+>>>>>>> 6c48087e281f8e9ea3d2ef523aaa945dd9b5eba5
