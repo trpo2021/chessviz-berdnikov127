@@ -14,7 +14,7 @@ int main()
                "6        ",
                "7PPPPPPPP",
                "8RNBQKBNR"};
-    vivod(chessboard);
+    output(chessboard);
     while (1) {
         locate(chessboard);
     }
