@@ -1,6 +1,6 @@
 #include <iostream>
 #include <libchessviz/locate.h>
-#include <libchessviz/vivod.h>
+#include <libchessviz/output.h>
 using namespace std;
 
 int main()
