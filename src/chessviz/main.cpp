@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <iostream>
 #include <libchessviz/locate.h>
 #include <libchessviz/output.h>
