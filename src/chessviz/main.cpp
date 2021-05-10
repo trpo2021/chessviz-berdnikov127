@@ -1,13 +1,32 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include <iostream>
+#include <string>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <iomanip>
+#include <fstream>
+#include <queue>
+#include <sstream>
+#include <cctype>
+#include <libchessviz/libchess.cpp>
 using namespace std;
 
-int main()
-{
-
-    cout << "8 r n b q k b n r\n7 p p p p p p p p\n6\n5\n4\n3\n2 P P P P P P P P\n1 R N B Q K B N R\n  a b c d e f g h " << endl;
-
-    return 0;
+int main() {
+	char** desk = fill_desk();
+	print_desk(desk);
+	string turn;
+	cout << "Enter move(for example a1-a2), enter 'exit' to exit\n";
+	cin >> turn;
+	while (turn != "exit") {
+		if (!check_input(turn)) {
+			cout << "error" << endl;
+		}
+		else {
+			do_turn(desk, turn);
+		}
+		cout << endl << "--------------------" << endl;
+		cin >> turn;
+	}
 }
