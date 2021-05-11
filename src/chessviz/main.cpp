@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <cmath>
 #include <vector>
@@ -10,7 +10,11 @@
 #include <queue>
 #include <sstream>
 #include <cctype>
-#include <libchessviz/libchess.cpp>
+#include <libchessviz/fill_desk.h>
+#include <libchessviz/check_input.h>
+#include <libchessviz/print_desk.h>
+#include <libchessviz/do_turn.h>
+
 using namespace std;
 
 int main() {
